@@ -60,7 +60,7 @@ ESX.RegisterServerCallback('esx_service:getInServiceList', function(source, cb, 
 	cb(InService[name])
 end)
 
-AddEventHandler('playerDropped', function()
+AddEventHandler('playerDropped', function(source)
 	local _source = source
 		
 	for k,v in pairs(InService) do
